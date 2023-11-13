@@ -1,5 +1,6 @@
 <?php
 header("Access-Control-Allow-Origin: https://eliaschaaya97.github.io/HomeShop");
+
 header("Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept");
 header("Access-Control-Allow-Methods: POST, GET, OPTIONS");
 
