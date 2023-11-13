@@ -1,10 +1,11 @@
 <?php
 header("Access-Control-Allow-Origin: *");
-header("Access-Control-Allow-Headers: access, Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With,Origin,  Accept");
+header("Access-Control-Allow-Headers: *");
 header("Access-Control-Allow-Methods: POST, GET, OPTIONS");
-
 header("Content-type: application/json; charset=UTF-8");
 header('Access-Control-Allow-Credentials: true');
+
+
 
 
 
