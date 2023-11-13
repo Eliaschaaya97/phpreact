@@ -1,8 +1,9 @@
 <?php
-header("Access-Control-Allow-Origin: https://eliaschaaya97.github.io/HomeShop");
-
-header("Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept");
-header("Access-Control-Allow-Methods: POST, GET, OPTIONS");
+header("Access-Control-Allow-Origin: https://eliaschaaya97.github.io/HomeShop ");
+header("Access-Control-Allow-Headers: access, Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With");
+header("Access-Control-Allow-Methods: POST");
+header("Content-type: application/json; charset=UTF-8");
+header('Access-Control-Allow-Credentials: true');
 
 
 
