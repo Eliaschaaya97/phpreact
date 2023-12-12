@@ -20,11 +20,19 @@ $password = $dData['password'];
 $result = "";
 
 if ($email != "" && $password != "") {
-    $sql = "SELECT * FROM register WHERE email ='$email' AND password='$password';";
+    $sql = "SELECT * FROM register WHERE email ='$email';";
     $res = mysqli_query($conn, $sql);
     
     if (mysqli_num_rows($res) != 0) {
-        $result = "loggedin successfully!";
+        $row = mysqli_fetch_assoc($res);
+        $hashedPassword = $row['password'];
+
+        // Use password_verify to check if the provided password matches the hashed password
+        if (password_verify($password, $hashedPassword)) {
+            $result = "loggedin successfully!";
+        } else {
+            $result = "Invalid username or password!";
+        }
     } else {
         $result = "Invalid username or password!";
     }
